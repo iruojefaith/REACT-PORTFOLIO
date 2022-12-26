@@ -1,0 +1,98 @@
+
+.bg1 {
+  background: url('../../../assets/profile.png');
+  object-fit: contain;
+}
+.one {
+  grid-area: hd;
+  width: 100px;
+  height: 70px;
+  /* margin-left: 200px; */
+}
+.two {
+  grid-area: ft;
+  width: 100px;
+
+}
+.three {
+  grid-area: main;
+  width: 100px;
+  height: 150px;
+  /* margin-left: -50px; */
+}
+.four {
+  grid-area: sd;
+  width: 120px;
+  /* margin-left: 180px; */
+}
+.five{
+  grid-area: fi;
+  width: 100px;
+  height: 70px;
+}
+.six{
+  grid-area: si;
+  width: 160px;
+  /* margin-left: -50px; */
+}
+.seven {
+  grid-area: se;
+  width: 70px;
+  height:70px;
+  /* margin-left: 230px; */
+  margin-top: -2px;
+}
+.eight {
+  grid-area: ei;
+  width: 100px;
+}
+.nine {
+  grid-area: ni;
+  width: 100px;
+  /* margin-left: 200px; */
+  height: 170px;
+}
+.ten {
+  grid-area: te;
+  width: 145px;
+  /* margin-left: -50px; */
+}
+.eleven {
+  grid-area: el;
+  width: 70px;
+  height:70px;
+  /* margin-left: -50px; */
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  grid-template-areas:
+    "hd ft ."
+    "sd ft main"
+    "sd ft  si"
+    "ni  fi  si"
+    "ni  ei  te"
+    "se  ei  te"
+    ".  ei  el"
+    ;
+  width: fit-content;
+  height: fit-content;
+  z-index: 1;
+  width: 100% !important;
+}
+
+
+
+.wrapper > div {
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.5s ease-in;
+}
