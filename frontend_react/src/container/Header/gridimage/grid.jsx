@@ -2,18 +2,18 @@ import React from 'react'
 import './grid.css'
 export default function grid() {
   return (
-    <div class="wrapper">
-    <div class="one bg1"> </div>
-    <div class="two bg1"> </div>
-    <div  class="three bg1"> </div>
-    <div  class="four bg1"> </div>
-    <div  class="five bg1" > </div>
-    <div  class="six bg1" > </div>
-    <div  class="seven bg1" > </div>
-    <div  class="eight bg1" > </div>
-    <div  class="nine bg1"> </div>
-    <div  class="ten bg1"> </div>
-    <div class="eleven bg1"> </div>
+    <div className="wrapper">
+    <div className="one bg1"> </div>
+    <div className="two bg1"> </div>
+    <div  className="three bg1"> </div>
+    <div  className="four bg1"> </div>
+    <div  className="five bg1" > </div>
+    <div  className="six bg1" > </div>
+    <div  className="seven bg1" > </div>
+    <div  className="eight bg1" > </div>
+    <div  className="nine bg1"> </div>
+    <div  className="ten bg1"> </div>
+    <div className="eleven bg1"> </div>
 </div>
   )
 }
