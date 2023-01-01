@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import Grid from './gridimage/grid';
-import Button from './Button'
+
 import './Header.scss';
 
 const scaleVariants = {
@@ -20,11 +20,11 @@ const scaleVariants = {
 };
 
 
-const Header = () => ({
+const Header = () => {
 const onButtonClick = () => {
     fetch('01_IRUOJE_FAITH_Resume.pdf').then(response => {
-        response.resume().then(resume => {
-            const fileURL = window.URL.createObjectURL(resume);
+        response.blob().then(blob => {
+            const fileURL = window.URL.createObjectURL(blob);
             let alink = document.createElement('a');
             alink.href = fileURL;
             alink.download = '01_IRUOJE_FAITH_Resume.pdf';
@@ -86,6 +86,6 @@ return (
     </motion.div>
   </div>
   </>
-);
+)};
 
 export default AppWrap(Header, 'home');
