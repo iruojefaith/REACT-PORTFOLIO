@@ -1,27 +1,23 @@
 #home {
   position: relative;
-  background: url("../../assets/bgWhite.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-
-  // disable the default padding styles
+font-size: 1.6rem;
   .app__wrapper {
     padding: 0;
-
     .copyright {
       display: none;
     }
   }
 }
 
+span{
+  font-size: 70.56px;
+  color: white;
+  font-weight: 700;
+}
 .app__header {
-  flex: 1;
-  width: 100%;
-  height: 100%;
-  flex-direction: row;
-
-  padding: 6rem 2rem 0rem;
+    display: grid;
+    position: relative;
+    margin-top: 15rem;
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
@@ -36,82 +32,87 @@
   }
 }
 
-.app__header-info {
-  flex: 0.65;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
+// .app__header-info {
+//   flex: 0.65;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   height: 100%;
 
-  margin: 0 2rem;
+//   margin: 0 2rem;
 
-  @media screen and (max-width: 1200px) {
-    width: 100%;
-    margin-right: 0rem;
-  }
-}
+//   @media screen and (max-width: 1200px) {
+//     width: 100%;
+//     margin-right: 0rem;
+//   }
+// }
 
-.app__header-badge {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-direction: column;
+// .app__header-badge {
+//   width: 100%;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: flex-end;
+//   flex-direction: column;
 
-  .badge-cmp,
-  .tag-cmp {
-    padding: 1rem 2rem;
-    background: var(--white-color);
-    border-radius: 15px;
-    flex-direction: row;
-    width: auto;
+//   .badge-cmp,
+//   .tag-cmp {
+//     padding: 1rem 2rem;
+//    background: -webkit-gradient(linear,left top,left bottom,from(rgba(35,37,49,.5)),to(rgba(15,15,24,.5)));
+//     background: -webkit-linear-gradient(top,rgba(35,37,49,.5),rgba(15,15,24,.5));
+//     background: linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
+//     border: 0.2rem solid #20222e;
+//     -webkit-backdrop-filter: blur(54px);
+//     backdrop-filter: blur(54px);
+//     border-radius: 7.3rem;
+//     border-radius: 15px;
+//     flex-direction: row;
+//     width: auto;
 
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  }
+//     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+//   }
 
-  .tag-cmp {
-    flex-direction: column;
-    margin-top: 3rem;
+//   .tag-cmp {
+//     flex-direction: column;
+//     margin-top: 3rem;
 
-    p {
-      width: 100%;
-      text-transform: uppercase;
-      text-align: right;
-      font-family: var(--font-primary);
-    }
-  }
+//     p {
+//       width: 100%;
+//       text-transform: uppercase;
+//       text-align: right;
+//       font-family: var(--font-primary);
+//     }
+//   }
 
-  span {
-    font-size: 2.5rem;
+//   span {
+//     font-size: 2.5rem;
 
-    @media screen and (min-width: 2000px) {
-      font-size: 5rem;
-    }
-  }
+//     @media screen and (min-width: 2000px) {
+//       font-size: 5rem;
+//     }
+//   }
 
-  @media screen and (max-width: 1200px) {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-}
+//   @media screen and (max-width: 1200px) {
+//     justify-content: flex-start;
+//     align-items: flex-start;
+//   }
+// }
 
 .app__header-circles {
-  flex: 0.75;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  grid-column: 12/14;
   height: 100%;
-  margin-left: 1rem;
+  margin-left: 5rem;
 
   div {
     width: 100px;
     height: 100px;
     border-radius: 50%;
 
-    background: var(--white-color);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    // background: var(--white-color);
+    // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+     background: -webkit-gradient(linear,left top,left bottom,from(rgba(35,37,49,.5)),to(rgba(15,15,24,.5)));
+    background: -webkit-linear-gradient(top,rgba(35,37,49,.5),rgba(15,15,24,.5));
+    background: linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
 
     img {
       width: 60%;
@@ -181,17 +182,90 @@
     z-index: 1;
   }
 
-  .overlay_circle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    width: 100%;
-    height: 90%;
-  }
 
   @media screen and (max-width: 1200px) {
     margin: 2rem 0;
   }
+}
+.header__hero--heading {
+ grid-column-start: auto;
+    width: 100%;
+}
+.header_gradient{
+  background: -webkit-linear-gradient(135deg,var(--color-light-blue),var(--secondary-color),var(--color-light-blue),var(--color-light-gold));
+    background: linear-gradient(-45deg,var(--color-light-blue),var(--secondary-color),var(--color-light-blue),var(--color-light-gold));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    -webkit-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0 50%;
+}
+}
+
+
+
+/* --------- */
+.wave {
+	animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+	animation-duration: 2.1s; /* Change to speed up or slow down */
+	animation-iteration-count: infinite; /* Never stop waving :) */
+	transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+	display: inline-block;
+}
+
+@keyframes wave-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(14deg);
+	} /* The following five values can be played with to make the waving more or less extreme */
+	20% {
+		transform: rotate(-8deg);
+	}
+	30% {
+		transform: rotate(14deg);
+	}
+	40% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	} /* Reset for the last half to pause */
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+
+
+.header{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.header__hero--cta {
+    margin-top: 3rem;
+    display: inline-block;
+    font-family: 'D-DIN Condensed',sans-serif;
+    font-size: 1.8rem;
+    line-height: 92.4%;
+    letter-spacing: .19em;
+    color: var(--color-gray);
+    text-decoration: none;
+    position: relative;
 }

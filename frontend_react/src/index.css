@@ -4,10 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@font-face {
+font-family: "CircularStd-Book";
+src: url("./fonts/CircularStd-Book.141786e81ed670627c7a85592c5c9897.woff") format("truetype");
+font-weight: bold;
+}
+@font-face {
+font-family: "D-DINCondensed-Bold";
+src: url("./fonts/D-DINCondensed-Bold.1c40626b390ef186f676b920b5a284ff.woff") format("truetype");
+font-weight: bold;
+}
+@font-face {
+font-family: "MarkPro-Heavy";
+src: url("./fonts/MarkPro-Heavy.e2c6ce4009c23ed34b4861cb4151990f.woff") format("truetype");
+font-weight: bold;
+}
 :root {
-  --font-base: "Noto Serif Display", sans-serif;
---font-primary:  'Source Sans Pro', sans-serif;
+  --font-base: "MarkPro-Heavy", "sans-serif";
+--font-primary:  "D-DINCondensed-Bold", "sans-serif";
   --primary-color: #edf2f8;
   --secondary-color: #d61249;
   --black-color: #030303;
@@ -15,11 +29,28 @@
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
+  --color-light-gold: #e68f59;
+  --color-light-blue: #6bc5f8;
+
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+*, ::after, ::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+body {
+  font-family: Circular Std Book,sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    background-size: 400% 400%;
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
   margin: 0;
-  scroll-behavior: smooth;
+  padding: 0;
+  top: 0;
+  left: 0;
 }

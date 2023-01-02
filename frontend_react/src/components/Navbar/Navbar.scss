@@ -1,18 +1,24 @@
 .app__navbar {
-  width: 100%;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
-  // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
-  z-index: 2;
+    top: 5rem;
+    right: 0;
+    left: 0;
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    background: rgba(42,43,56,.5);
+    border: 0.2rem solid #2a2b37;
+    -webkit-backdrop-filter: blur(104px);
+    backdrop-filter: blur(104px);
+    border-radius: 1rem;
+    z-index: 2;
+
 }
 
 .app__navbar-logo {
@@ -101,14 +107,11 @@
 
   div {
     position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
     z-index: 5;
-
+    top: -4.5rem;
+    left: -9rem;
     padding: 1rem;
-
-    width: 80%;
+    width: 100vw;
     height: 100vh;
 
     display: flex;
@@ -117,12 +120,10 @@
     flex-direction: column;
 
     background: url('../../assets/bgWhite.png');
-    background-color: var(--white-color);
+    background-color: var(--black-color);
     background-size: cover;
     background-repeat: repeat;
 
-    /* top box shadow */
-    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
 
     svg {
       width: 35px;
@@ -137,10 +138,9 @@
       padding: 0;
       height: 100%;
       width: 100%;
-
       display: flex;
       justify-content: flex-start;
-      align-items: flex-start;
+      align-items: center;
       flex-direction: column;
 
       li {
@@ -162,12 +162,12 @@
       }
     }
 
-    @media screen and (min-width: 900px) {
-      display: none;
-    }
+
   }
 
-  @media screen and (min-width: 900px) {
-    display: none;
-  }
+    @media screen and (min-width: 900px) {
+      div{
+      left: -20rem;
+      }
+    }
 }
