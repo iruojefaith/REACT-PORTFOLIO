@@ -38,7 +38,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+      <h2 className="head-text">My Creative <span className='header_gradient'>Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
         {[ 'Web App', 'React JS' , 'VUE JS','All'].map((item, index) => (

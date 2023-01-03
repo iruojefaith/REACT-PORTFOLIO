@@ -42,7 +42,7 @@ return (
     >
         <span>Making ideas turn into </span> <br></br>
         <span> real life </span>
-        <span class="header_gradient">products </span><br></br>
+        <span className='header_gradient'>products </span><br></br>
         <span> what i love doing</span>
         <br></br>
   <div className='header__hero--cta'><button onClick={onButtonClick}>Download CV </button></div>

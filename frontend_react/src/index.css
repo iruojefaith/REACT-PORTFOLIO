@@ -54,3 +54,14 @@ body {
   top: 0;
   left: 0;
 }
+
+.header_gradient{
+  background: -webkit-linear-gradient(135deg,var(--color-light-blue),var(--secondary-color),var(--color-light-blue),var(--color-light-gold));
+    background: linear-gradient(-45deg,var(--color-light-blue),var(--secondary-color),var(--color-light-blue),var(--color-light-gold));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    -webkit-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
+}

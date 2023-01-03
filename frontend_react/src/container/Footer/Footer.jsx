@@ -37,16 +37,16 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className="head-text">Take a coffee & chat with <span>me</span></h2>
+      <h2 className="head-text">Take a coffee & chat with me</h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:faithiruoje@gmail.com" className="p-text">hello@faithiruoje@gmail.com</a>
+          <a href="mailto:iruojefaith@gmail.com" className="p-text">iruojefaith@gmail.com</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
-          <a href="tel:+2349069573460" className="p-text">+1 (123) 456-7890</a>
+          <a href="tel:+2349069573460" className="p-text">+2349069573460</a>
         </div>
       </div>
       {!isFormSubmitted ? (
