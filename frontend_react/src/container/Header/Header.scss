@@ -223,7 +223,20 @@ grid-template-columns: repeat(2, 1fr);
     font-size: 1.8rem;
     line-height: 92.4%;
     letter-spacing: .19em;
-    color: var(--color-gray);
+    color: #c4c4c4;
     text-decoration: none;
     position: relative;
 }
+.header__hero--cta::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background: #c4c4c4;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+

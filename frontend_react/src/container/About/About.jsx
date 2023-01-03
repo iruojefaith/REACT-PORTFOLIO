@@ -1,42 +1,35 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-
+import Grid from './gridimage/grid'
+import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
-import { urlFor, client } from '../../client';
 
 const About = () => {
-  const [abouts, setAbouts] = useState([]);
-
-  useEffect(() => {
-    const query = '*[_type == "abouts"]';
-
-    client.fetch(query).then((data) => {
-      setAbouts(data);
-    });
-  }, []);
 
   return (
-    <>
-      <h2 className="head-text">About <span className='header_gradient'>Me</span></h2>
+    <div className='my-8 '>
 
-      <div className="app__profiles">
-        {abouts.map((about, index) => (
+      <div className="app__profiles grid gap-4 grid-cols-2 w-100 ">
+
           <motion.div
             whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: 'tween' }}
             className="app__profile-item"
-            key={about.title + index}
           >
-            <img src={urlFor(about.imgUrl)} alt={about.title} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
-            <h3>Hey stranger<span className="wave">👋,</span></h3>
-            <p className="p-text" style={{ marginTop: 10 }}>  {about.description}</p>
+            <h3 className='text-white'>Hey stranger<span className="wave ">👋,</span></h3>
+            <p className="p-text" style={{ marginTop: 10 }}> </p>
           </motion.div>
-        ))}
+
+          <motion.div
+      whileInView={{ opacity: [0, 1] }}
+      transition={{ duration: 0.5, delayChildren: 0.5 }}
+      className="app__header-img ml-[8rem]">
+      <Grid />
+    </motion.div>
       </div>
-    </>
+    </div>
   );
 };
 

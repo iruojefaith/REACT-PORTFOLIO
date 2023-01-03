@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
-import Grid from './gridimage/grid';
 
 import './Header.scss';
 
@@ -43,9 +42,9 @@ return (
         <span>Making ideas turn into </span> <br></br>
         <span> real life </span>
         <span className='header_gradient'>products </span><br></br>
-        <span> what i love doing</span>
+        <span> what i love doing.</span>
         <br></br>
-  <div className='header__hero--cta'><button onClick={onButtonClick}>Download CV </button></div>
+  <div><button className='header__hero--cta text-white text-sm' onClick={onButtonClick}>DOWNLOAD CV </button></div>
 
     </motion.div>
 <motion.div
@@ -62,19 +61,7 @@ return (
 
 
 
-    {/* <motion.div
-      whileInView={{ opacity: [0, 1] }}
-      transition={{ duration: 0.5, delayChildren: 0.5 }}
-      className="app__header-img">
-      <Grid />
-      <motion.img
-        whileInView={{ scale: [0, 1] }}
-        transition={{ duration: 1, ease: 'easeInOut' }}
-        src={images.circle}
-        alt="profile_circle"
-        className="overlay_circle"
-      />
-    </motion.div> */}
+
 
 
   </div>
