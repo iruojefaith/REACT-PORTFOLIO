@@ -16,5 +16,4 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
     </div>
   );
 };
-
 export default AppWrap;

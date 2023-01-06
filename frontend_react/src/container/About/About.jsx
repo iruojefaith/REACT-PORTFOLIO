@@ -8,7 +8,7 @@ import './About.scss';
 const About = () => {
 
   return (
-    <div className='my-8 '>
+    <div className='mt-[15rem] '>
 
       <div className="app__profiles grid gap-4 grid-cols-2 w-100 ">
 

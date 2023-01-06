@@ -1,16 +1,17 @@
 
 .bg1 {
   background: url('../../../assets/profile.png');
-  background-position: center;
+  /* background-position: center;
   object-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   background-attachment: fixed;
+  background-size: contain;
 }
 .one {
   grid-area: hd;
   width: 100px;
   height: 50px;
-  /* margin-left: 200px; */
+  margin-left: 200px;
 }
 .two {
   grid-area: ft;
@@ -21,12 +22,12 @@
   grid-area: main;
   width: 100px;
   height: 120px;
-  /* margin-left: -50px; */
+  margin-left: -50px;
 }
 .four {
   grid-area: sd;
   width: 100px;
-  /* margin-left: 180px; */
+  margin-left: 180px;
 }
 .five{
   grid-area: fi;
@@ -36,13 +37,13 @@
 .six{
   grid-area: si;
   width: 160px;
-  /* margin-left: -50px; */
+  margin-left: -50px;
 }
 .seven {
   grid-area: se;
   width: 70px;
   height:50px;
-  /* margin-left: 230px; */
+  margin-left: 230px;
   margin-top: -2px;
 }
 .eight {
@@ -52,19 +53,19 @@
 .nine {
   grid-area: ni;
   width: 100px;
-  /* margin-left: 200px; */
+  margin-left: 200px;
   height: 150px;
 }
 .ten {
   grid-area: te;
   width: 145px;
-  /* margin-left: -50px; */
+  margin-left: -50px;
 }
 .eleven {
   grid-area: el;
   width: 70px;
   height:70px;
-  /* margin-left: -50px; */
+  margin-left: -50px;
 }
 
 .wrapper {
@@ -80,7 +81,7 @@
     "se  ei  te"
     ".  ei  el"
     ;
-  width:100;
+  width: fit-content;
   height: fit-content;
   z-index: 1;
 }
@@ -88,10 +89,12 @@
 
 
 .wrapper > div {
-  margin-right: -10rem;
+  margin-left: -5rem;
   border-radius: 15px;
 /* backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px); */
   border: 2px solid rgba(255, 255, 255, 0.18);
   transition: all 0.5s ease-in;
+
+
 }
