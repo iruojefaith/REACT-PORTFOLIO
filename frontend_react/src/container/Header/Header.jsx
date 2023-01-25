@@ -39,13 +39,11 @@ return (
       transition={{ duration: 0.5 }}
       className="header__hero--heading w-full"
     >
-        <h1><span>Making ideas turn into </span> <br></br></h1>
-        <h1><span> real life<span className='header_gradient'> products </span>  what</span></h1>
-        <h1><span> i love doing.</span></h1>
+        <h1><span>Making ideas turn into real life<span className='header_gradient'> products </span>
+        what i love doing.</span></h1>
         <br></br>
   <div>
   <button className='header__hero--cta text-white text-sm' onClick={onButtonClick}>DOWNLOAD CV </button></div>
-
     </motion.div>
 <motion.div
       variants={scaleVariants}

@@ -12,11 +12,13 @@ font-size: 1.6rem;
 span{
   color: white;
   font-weight: 700;
+
 }
 .app__header {
-    display: grid;
+    display: flex;
     position: relative;
     margin-top: 15rem;
+    width: 90%;
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
   }
@@ -26,8 +28,12 @@ span{
   }
 
   @media screen and (max-width: 750px) {
-    padding: 4rem 1rem 2rem;
-      grid-template-columns: auto ;
+    padding: 1rem 1rem 1rem;
+    margin-left: -4rem;
+    gap: 4rem;
+    letter-spacing: 15px;
+    width: 100%;
+    flex-direction: column;
   }
 }
 
