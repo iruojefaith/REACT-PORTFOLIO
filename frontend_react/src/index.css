@@ -27,9 +27,8 @@ font-weight: bold;
 }
 
 :root {
-  --main-size: 36;
-  --max-size: 64;
-   --responsive: calc(var(--min-size)*0.06em + (var(--max-size) - var(--min-size))*(0.12821vw - 0.53846px));
+  --main-size: 36px;
+  --max-size: 64px;
   --font-base: "MarkPro-Heavy", "sans-serif";
 --font-primary:  "D-DINCondensed-Bold", "sans-serif";
   --primary-color: #edf2f8;
@@ -61,6 +60,9 @@ body {
   font-family: Grotesk,"Source Sans Pro",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 
 } */
+*{
+  --responsive: calc(36 * 0.06em + (64 - 36)*(0.12821vw - 0.53846px));
+}
 
 h1 {
   letter-spacing: -5px;
